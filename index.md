@@ -11,7 +11,7 @@ Melbourne, Australia.
 
 #### Repositories
 
-[![github.com](https://github.com/favicon.ico) GitHub ‖ Esri/arcgis-appstudio-samples ](https://github.com/Esri/arcgis-appstudio-samples)
+[![github.com](https://github.com/favicon.ico) GitHub ‖ Esri/arcgis-appstudio-samples ](https://github.com/Esri/arcgis-appstudio-samples)  
 [![github.com](https://github.com/favicon.ico) GitHub ‖ stephenquan ](https://github.com/stephenquan)  
 [![github.com](https://github.com/favicon.ico) GitHub ‖ stephenquan/MyVideoFilterApp ](https://github.com/stephenquan/MyVideoFilterApp)  
 [![github.com](https://github.com/favicon.ico) GitHub ‖ stephenquan/AAMVAtoJSON ](https://github.com/stephenquan/AAMVAtoJSON)  
