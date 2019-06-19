@@ -1,39 +1,29 @@
-## Welcome to GitHub Pages
+## Stephen Quan
 
-stackoverflow
-You can use the [editor on GitHub](https://github.com/stephenquan/stephenquan/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+GIS Specialist at Esri.  
+Melbourne, Australia.  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+#### Products
 
-### Markdown
+[![appstudio.arcgis.com](https://appstudio.arcgis.com/favicon.ico) AppStudio For ArcGIS](https://appstudio.arcgis.com)  
+[![survey123.arcgis.com](http://survey123.arcgis.com/assets/img/favicon-16889974.ico) Survey123 for ArcGIS](https://survey123.arcgis.com)  
+[![esri.com](https://appstudio.arcgis.com/favicon.ico) ArcPad](https://www.esri.com/en-us/arcgis/products/arcpad/overview)  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Repositories
 
-```markdown
-Syntax highlighted code block
+[![github.com](https://github.com/favicon.ico) GitHub ‖ Esri/arcgis-appstudio-samples ](https://github.com/Esri/arcgis-appstudio-samples)  
+[![github.com](https://github.com/favicon.ico) GitHub ‖ stephenquan ](https://github.com/stephenquan)  
+[![github.com](https://github.com/favicon.ico) GitHub ‖ stephenquan/MyVideoFilterApp ](https://github.com/stephenquan/MyVideoFilterApp)  
+[![github.com](https://github.com/favicon.ico) GitHub ‖ stephenquan/AAMVAtoJSON ](https://github.com/stephenquan/AAMVAtoJSON)  
 
-# Header 1
-## Header 2
-### Header 3
+#### Forums
 
-- Bulleted
-- List
+[![esri.com](https://assets2.jiveon.com/core/2018.16.0.0.11dadcc/images/jive-icon-blog-12x12.png) AppStudio for ArcGIS ‖ GeoNet, the Esri Community](https://community.esri.com/groups/appstudio)  
+[![esri.com](https://assets2.jiveon.com/core/2018.16.0.0.11dadcc/images/jive-icon-blog-12x12.png) Survey123 ‖ GeoNet, the Esri Community](https://community.esri.com/groups/survey123)  
+[![esri.com](https://assets2.jiveon.com/core/2018.16.0.0.11dadcc/images/jive-icon-blog-12x12.png) ArcPad ‖ GeoNet, the Esri Community](https://community.esri.com/community/gis/applications/arcpad/content)  
 
-1. Numbered
-2. List
+#### Contact Me
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/stephenquan/stephenquan/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-
+[![esri.com](https://community.esri.com/resources/images/palette-1016/faviconImage-1553176046682-favicon.ico) GeoNet, the Esri Community](https://community.esri.com/people/SQuan-esristaff)  
+[![linkedin.com](https://linkedin.com/favicon.ico) LinkedIn](https://www.linkedin.com/in/stephen-quan-b2b44636)  
+[![stackoverflow.com](https://stackoverflow.com/favicon.ico) Stack Overflow](https://stackoverflow.com/users/881441/stephen-quan/)  
