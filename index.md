@@ -3,16 +3,19 @@
 GIS Specialist at Esri.  
 Melbourne, Australia.  
 
-***
+#### Projects
 
-[![esri.com](https://assets2.jiveon.com/core/2018.16.0.0.11dadcc/images/jive-icon-blog-12x12.png) AppStudio for ArcGIS blog on GeoNet, the Esri Community](https://community.esri.com/groups/appstudio/blog)
+[![appstudio.arcgis.com](https://appstudio.arcgis.com/favicon.ico) AppStudio For ArcGIS](https://appstudio.arcgis.com)  
+[![survey123.arcgis.com](http://survey123.arcgis.com/assets/img/favicon-16889974.ico) Survey123 for ArcGIS](https://survey123.arcgis.com)  
+[![esri.com](https://appstudio.arcgis.com/favicon.ico) ArcPad](https://www.esri.com/en-us/arcgis/products/arcpad/overview)  
 
+#### Forums
 
-***
+[![esri.com](https://assets2.jiveon.com/core/2018.16.0.0.11dadcc/images/jive-icon-blog-12x12.png) AppStudio for ArcGIS blog | GeoNet, the Esri Community](https://community.esri.com/groups/appstudio/blog)  
+[![esri.com](https://assets2.jiveon.com/core/2018.16.0.0.11dadcc/images/jive-icon-blog-12x12.png) ArcPad | GeoNet, the Esri Community](https://community.esri.com/community/gis/applications/arcpad/content)  
 
-Contact me:
-[![esri.com](https://community.esri.com/resources/images/palette-1016/faviconImage-1553176046682-favicon.ico) GeoNet, the Esri Community](https://community.esri.com/people/SQuan-esristaff)
-|
-[![stackoverflow.com](https://stackoverflow.com/favicon.ico) Stack Overflow](https://stackoverflow.com/users/881441/stephen-quan/)
-|
-[![linkedin.com](https://linkedin.com/favicon.ico) LinkedIn](https://www.linkedin.com/in/stephen-quan-b2b44636)
+#### Contact Me
+
+[![esri.com](https://community.esri.com/resources/images/palette-1016/faviconImage-1553176046682-favicon.ico) GeoNet, the Esri Community](https://community.esri.com/people/SQuan-esristaff)  
+[![stackoverflow.com](https://stackoverflow.com/favicon.ico) Stack Overflow](https://stackoverflow.com/users/881441/stephen-quan/)  
+[![linkedin.com](https://linkedin.com/favicon.ico) LinkedIn](https://www.linkedin.com/in/stephen-quan-b2b44636)  
