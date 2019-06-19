@@ -11,8 +11,8 @@ Melbourne, Australia.
 
 #### Forums
 
-[![esri.com](https://assets2.jiveon.com/core/2018.16.0.0.11dadcc/images/jive-icon-blog-12x12.png) AppStudio for ArcGIS blog | GeoNet, the Esri Community](https://community.esri.com/groups/appstudio/blog)  
-[![esri.com](https://assets2.jiveon.com/core/2018.16.0.0.11dadcc/images/jive-icon-blog-12x12.png) ArcPad | GeoNet, the Esri Community](https://community.esri.com/community/gis/applications/arcpad/content)  
+[![esri.com](https://assets2.jiveon.com/core/2018.16.0.0.11dadcc/images/jive-icon-blog-12x12.png) AppStudio for ArcGIS blog ‖ GeoNet, the Esri Community](https://community.esri.com/groups/appstudio/blog)  
+[![esri.com](https://assets2.jiveon.com/core/2018.16.0.0.11dadcc/images/jive-icon-blog-12x12.png) ArcPad ‖ GeoNet, the Esri Community](https://community.esri.com/community/gis/applications/arcpad/content)  
 
 #### Contact Me
 
