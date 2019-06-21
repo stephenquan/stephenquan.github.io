@@ -1,4 +1,5 @@
 theme: jekyll-theme-slate
+include: [ 'KB' ]
 
 defaults:
   - scope:
