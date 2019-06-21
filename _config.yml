@@ -1,8 +1,5 @@
 theme: jekyll-theme-slate
-include: [ 'KB' ]
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
+title: Stephen Quan WebSite
+description: Stephen Quan website
+url: https://stephenquan.github.io
+github_username: stephenquan
