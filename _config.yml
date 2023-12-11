@@ -1,0 +1,12 @@
+remote_theme: jekyll/minima
+# theme: jekyll-theme-slate
+
+plugins:
+  - jekyll-mentions
+  - jemoji
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-remote-theme
+
+google_analytics: G-XZ7J3X7SXW
