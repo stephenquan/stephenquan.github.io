@@ -8,29 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://stephenquan.github.io/">
+        <link rel="canonical" href="https://stephenquan.github.io/SQuan.Helpers/Maui.Localization/LocalizationManager/">
       
       
+        <link rel="prev" href="../">
       
-        <link rel="next" href="SQuan.Helpers/Maui/">
+      
+        <link rel="next" href="../../Maui.Mvvm/">
       
       
         
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Stephen Quan</title>
+        <title>LocalizationManager Class - Stephen Quan</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -84,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome" class="md-skip">
+        <a href="#localizationmanager-class" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +102,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Stephen Quan" class="md-header__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
+    <a href="../../.." title="Stephen Quan" class="md-header__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M176 56v40h160V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8m-48 40V56c0-30.9 25.1-56 56-56h144c30.9 0 56 25.1 56 56v40h28.1c12.7 0 24.9 5.1 33.9 14.1l51.9 51.9c9 9 14.1 21.2 14.1 33.9V272H376v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H184v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H0v-76.1C0 183.2 5.1 171 14.1 162L66 110.1c9-9 21.2-14.1 33.9-14.1zM0 416v-96h136v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h144v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h136v96c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64"/></svg>
@@ -120,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome
+              LocalizationManager Class
             
           </span>
         </div>
@@ -224,7 +226,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Stephen Quan" class="md-nav__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
+    <a href="../../.." title="Stephen Quan" class="md-nav__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M176 56v40h160V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8m-48 40V56c0-30.9 25.1-56 56-56h144c30.9 0 56 25.1 56 56v40h28.1c12.7 0 24.9 5.1 33.9 14.1l51.9 51.9c9 9 14.1 21.2 14.1 33.9V272H376v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H184v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H0v-76.1C0 183.2 5.1 171 14.1 162L66 110.1c9-9 21.2-14.1 33.9-14.1zM0 416v-96h136v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h144v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h136v96c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64"/></svg>
@@ -239,37 +241,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Welcome
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -285,59 +260,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#community-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Community projects
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#communitytoolkit-contributions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CommunityToolkit contributions
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#older-projects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Older projects
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -346,8 +268,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -363,11 +287,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -388,7 +312,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -426,7 +350,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="SQuan.Helpers/Maui/" class="md-nav__link ">
+            <a href="../../Maui/" class="md-nav__link ">
               
   
   
@@ -488,7 +412,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="SQuan.Helpers/Maui/AspectView/" class="md-nav__link ">
+            <a href="../../Maui/AspectView/" class="md-nav__link ">
               
   
   
@@ -540,6 +464,8 @@
                 
   
   
+    
+  
   
   
     
@@ -555,15 +481,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="SQuan.Helpers/Maui.Localization/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -587,7 +513,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -604,6 +530,8 @@
                 
   
   
+    
+  
   
   
     
@@ -617,15 +545,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="SQuan.Helpers/Maui.Localization/LocalizationManager/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -644,7 +572,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -698,7 +626,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="SQuan.Helpers/Maui.Mvvm/" class="md-nav__link ">
+            <a href="../../Maui.Mvvm/" class="md-nav__link ">
               
   
   
@@ -769,7 +697,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="SQuan.Helpers/SQLite.Spatial/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/" class="md-nav__link ">
               
   
   
@@ -831,7 +759,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="SQuan.Helpers/SQLite.Spatial/MicrosoftDataSqliteSpatialConnection/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/MicrosoftDataSqliteSpatialConnection/" class="md-nav__link ">
               
   
   
@@ -896,7 +824,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="SQuan.Helpers/SQLite.Spatial/SQLiteNetSpatialConnection/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/SQLiteNetSpatialConnection/" class="md-nav__link ">
               
   
   
@@ -961,7 +889,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="SQuan.Helpers/SQLite.Spatial/ST/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/ST/" class="md-nav__link ">
               
   
   
@@ -1043,10 +971,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#community-projects" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Community projects
+        Overview
       
     </span>
   </a>
@@ -1054,10 +982,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#communitytoolkit-contributions" class="md-nav__link">
+  <a href="#c-namespace" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CommunityToolkit contributions
+        C# namespace
       
     </span>
   </a>
@@ -1065,10 +993,76 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#older-projects" class="md-nav__link">
+  <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Older projects
+        Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Methods
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Property
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#currentculture-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CurrentCulture Property
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#currentuiculture-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CurrentUICulture Property
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#localizationprovider-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LocalizationProvider Property
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getstring-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GetString Method
       
     </span>
   </a>
@@ -1092,26 +1086,91 @@
 
 
 
-<h1 id="welcome">Welcome</h1>
-<p>Hi, I'm Stephen Quan, a Principal Software Development Engineer at <a href="https://www.esri.com/">Esri</a> based in Melbourne, Australia. I work on Esri's field data collection products, including <a href="https://survey123.arcgis.com/">ArcGIS Survey123</a> and <a href="https://www.esri.com/en-us/arcgis/products/arcgis-quickcapture/overview">ArcGIS QuickCapture</a>, helping build next-generation solutions with .NET and .NET MAUI.</p>
-<h2 id="community-projects">Community projects</h2>
-<p>In my spare time, I build and maintain a number of open source libraries published on NuGet.org. These projects began as solutions to problems I encountered in my own work, but have since evolved into tools that contribute to the broader .NET and .NET MAUI communities.</p>
-<ul>
-<li><a href="SQuan.Helpers/Maui/Maui.md">SQuan.Helpers.Maui</a></li>
-<li><a href="SQuan.Helpers/Maui/Localization.md">SQuan.Helpers.Maui.Localization</a></li>
-<li><a href="SQuan.Helpers/Maui/Mvvm.md">SQuan.Helpers.Maui.Mvvm</a></li>
-<li><a href="SQuan.Helpers/SQLite/Spatial.md">SQuan.Helpers.SQLite.Spatial</a></li>
-</ul>
-<h2 id="communitytoolkit-contributions">CommunityToolkit contributions</h2>
-<ul>
-<li><a href="https://github.com/CommunityToolkit/Maui.Markup/releases#release-8.0.0">CommunityToolkit.Maui.Markup 8.0.0: Compiled Bindings support</a></li>
-<li><a href="https://github.com/CommunityToolkit/Maui/pull/2987">CommunityToolkit.Maui BindableProperty initializers</a></li>
-<li><a href="https://github.com/CommunityToolkit/Maui/pull/2182">CommunityToolkit.Maui Add boolean operators to MathExpression</a></li>
-</ul>
-<h2 id="older-projects">Older projects</h2>
-<ul>
-<li><a href="https://stephenquan.github.io/qmlonline/">QMLOnline</a></li>
-</ul>
+<h1 id="localizationmanager-class">LocalizationManager Class</h1>
+<h2 id="overview">Overview</h2>
+<p>Namespace: <a href="..">SQuan.Helpers.Maui.Localization</a></p>
+<p>LocalizationManager is a singleton service that centralizes localization and culture management for an application. It exposes observable CurrentCulture and CurrentUICulture properties and supports a pluggable LocalizationProvider for translating strings from any localization source. By implementing INotifyPropertyChanged, the manager notifies the application whenever the active culture changes, allowing UI elements and data bindings to update automatically at runtime without requiring an application restart.</p>
+<p>In addition to culture management, LocalizationManager provides an extended GetString() API that offers fine-grained control over localization behavior. Resource strings can be retrieved using a specific UI culture, while numbers, dates, and currency values can be formatted using a different culture or fall back to the system defaults. This flexibility makes it easy to build culture-aware applications that can dynamically switch languages while preserving the appropriate regional formatting conventions.</p>
+<h2 id="c-namespace">C# namespace</h2>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.Maui.Localization</span><span class="p">;</span>
+</span></code></pre></div>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#current-property">Current</a></td>
+<td>Provides access to the LocalizationManager singleton</td>
+</tr>
+<tr>
+<td><a href="#currentculture-property">CurrentCulture</a></td>
+<td>Gets or sets the culture used for numbers, currency and dates</td>
+</tr>
+<tr>
+<td><a href="#currentuiculture-property">CurrentUICulture</a></td>
+<td>Gets or sets the culture used for translating strings</td>
+</tr>
+<tr>
+<td><a href="#localizationprovider-property">LocalizationProvider</a></td>
+<td>Gets or sets the culture-aware string lookup function</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#getstring-method">GetString</a></td>
+<td>Retrieves localized strings through the active LocalizationProvider</td>
+</tr>
+</tbody>
+</table>
+<h2 id="current-property">Current Property</h2>
+<p><code>LocalizationManager.Current</code> returns the singleton <code>LocalizationManager</code> instance, providing a central point of access for localization services, culture settings, and localized string retrieval throughout the application.</p>
+<h2 id="currentculture-property">CurrentCulture Property</h2>
+<p><code>LocalizationManager.Current.CurrentCulture</code> provides access to the culture used for formatting numbers, currency values, dates, and other culture-sensitive data. It acts as a wrapper around CultureInfo.CurrentCulture, allowing applications to both read and change the active formatting culture at runtime. When this value is updated, LocalizationManager raises the appropriate notifications so that culture-aware UI elements and data bindings can automatically refresh throughout the application.</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="n">CultureInfo</span><span class="w"> </span><span class="n">CultureCulture</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// Follow numeric, currency and date formatting used in France.</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">CurrentUICulture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">CultureInfo</span><span class="p">(</span><span class="s">&quot;fr-FR&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<h2 id="currentuiculture-property">CurrentUICulture Property</h2>
+<p><code>LocalizationManager.Current.CurrentUICulture</code> gets or sets the culture used for retrieving localized strings and other user-facing resources. As a wrapper around <code>CultureInfo.CurrentUICulture</code>, it allows applications to change the active UI language at runtime. Changing this value triggers localization notifications, enabling culture-aware components to automatically update throughout the application.</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">public</span><span class="w"> </span><span class="n">CultureInfo</span><span class="w"> </span><span class="n">CultureUICulture</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<p>Example</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// Translate all text to French.</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">CurrentUICulture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">CultureInfo</span><span class="p">(</span><span class="s">&quot;fr-FR&quot;</span><span class="p">);</span>
+</span></code></pre></div>
+<h2 id="localizationprovider-property">LocalizationProvider Property</h2>
+<p><code>LocalizationManager.Current.LocalizationProvider</code> gets or sets the delegate used to resolve localized strings. The provider receives a resource key and CultureInfo and returns the corresponding translated string. This allows applications to integrate with ResourceManager.GetString, RESX resources, databases, remote services, or custom localization systems. Changing this value updates the localization source used by LocalizationManager for all subsequent string lookups.</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">public</span><span class="w"> </span><span class="n">Func</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="n">CultureInfo</span><span class="o">?</span><span class="p">,</span><span class="w"> </span><span class="kt">string?</span><span class="o">&gt;?</span><span class="w"> </span><span class="n">LocalizationProvider</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<p>Example</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// Use a ResourceManager to provide localized strings.</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizationProvider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AppStrings</span><span class="p">.</span><span class="n">ResourceManager</span><span class="p">.</span><span class="n">GetString</span><span class="p">;</span>
+</span></code></pre></div>
+<h2 id="getstring-method">GetString Method</h2>
+<p>GetString() retrieves a localized string using the configured LocalizationProvider. The method supports composite string formatting by accepting format arguments and can optionally use the supplied currentUICulture and currentCulture values when resolving and formatting the result. If no cultures are provided, the application-wide CurrentUICulture and CurrentCulture values are used, allowing localized strings and culture-sensitive formatting to be resolved consistently throughout the application.</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">string?</span><span class="w"> </span><span class="n">GetString</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="k">params</span><span class="w"> </span><span class="kt">object</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">);</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kt">string?</span><span class="w"> </span><span class="n">GetString</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">CultureInfo</span><span class="o">?</span><span class="w"> </span><span class="n">currentUICulture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="k">params</span><span class="w"> </span><span class="kt">object</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">);</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="kt">string?</span><span class="w"> </span><span class="n">GetString</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">CultureInfo</span><span class="o">?</span><span class="w"> </span><span class="n">currentUICulture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="n">CultureInfo</span><span class="o">?</span><span class="w"> </span><span class="n">currentCulture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="k">params</span><span class="w"> </span><span class="kt">object</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">);</span>
+</span></code></pre></div>
+<p>Example</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// Translate &quot;Clicked {0} times!&quot;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kt">string?</span><span class="w"> </span><span class="n">buttonText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">GetString</span><span class="p">(</span><span class="s">&quot;BUTTON_CLICKED_N_TIMES&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">Count</span><span class="p">);</span>
+</span></code></pre></div>
 
 
 
@@ -1203,10 +1262,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy", "navigation.indexes"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
