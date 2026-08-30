@@ -479,6 +479,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -578,6 +582,136 @@
             
   
     LocalizationManager
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Maui.Localization/LocalizeExtension/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LocalizeExtension
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LocalizeExtension
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Maui.Localization/LocalizeExtensionMethods/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LocalizeExtensionMethods
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LocalizeExtensionMethods
   
 
           </label>
@@ -971,6 +1105,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C# namespace
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xaml-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XAML namespace
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fields" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -986,6 +1153,28 @@
     <span class="md-ellipsis">
       
         Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aspectratio-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AspectRatio Property
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contentsize-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ContentSize Property
       
     </span>
   </a>
@@ -1021,6 +1210,15 @@
 
 
 <h1 id="aspectview-class">AspectView Class</h1>
+<h2 id="overview">Overview</h2>
+<p>AspectView is a view component that automatically maintains a fixed aspect ratio for its content, making it easy to display images, maps, videos, and other visual elements without distortion. It dynamically measures and arranges its child view to preserve the specified width-to-height ratio while adapting to the available layout space.</p>
+<p>By handling aspect ratio calculations for you, AspectView simplifies responsive UI design in .NET MAUI and helps ensure consistent presentation across different screen sizes, orientations, and platforms.</p>
+<h2 id="c-namespace">C# namespace</h2>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.Maui</span><span class="p">;</span>
+</span></code></pre></div>
+<h2 id="xaml-namespace">XAML namespace</h2>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>xmlns:sqm=&quot;clr-namespace:SQuan.Helpers.Maui;assembly=SQuan.Helpers.Maui&quot;
+</span></code></pre></div>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -1032,11 +1230,11 @@
 <tbody>
 <tr>
 <td>AspectRatioProperty</td>
-<td>Bindable property for <code>AspectRatio</code>.</td>
+<td>Bindable property for <a href="#aspectratio-property">AspectRatio</a>.</td>
 </tr>
 <tr>
 <td>ContentSizeProperty</td>
-<td>Bindable property for <code>ContentSize</code>.</td>
+<td>Bindable property for <a href="#contentsize-property">ContentSize</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1050,26 +1248,34 @@
 </thead>
 <tbody>
 <tr>
-<td>AspectRatio</td>
+<td><a href="#aspectratio-property">AspectRatio</a></td>
 <td>Gets or sets the desired aspect ratio of the content, expressed as width ÷ height.</td>
 </tr>
 <tr>
-<td>ContentSize</td>
+<td><a href="#contentsize-property">ContentSize</a></td>
 <td>Gets the calculated size of the content after the aspect ratio has been applied.</td>
 </tr>
 </tbody>
 </table>
+<h2 id="aspectratio-property">AspectRatio Property</h2>
+<p>Gets or sets the desired aspect ratio of the content, expressed as width ÷ height.</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">AspectRatio</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
+<h2 id="contentsize-property">ContentSize Property</h2>
+<p>Gets the calculated size of the content after the aspect ratio has been applied.</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">public</span><span class="w"> </span><span class="n">Size</span><span class="w"> </span><span class="n">ContentSize</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="example">Example</h2>
-<div class="language-xml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;ContentPage</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="na">xmlns=</span><span class="s">&quot;http://schemas.microsoft.com/dotnet/2021/maui&quot;</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="na">xmlns:x=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="na">xmlns:sqm=</span><span class="s">&quot;clr-namespace:SQuan.Helpers.Maui;assembly=SQuan.Helpers.Maui&quot;</span><span class="nt">&gt;</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">&lt;sqm:AspectView</span><span class="w"> </span><span class="na">Padding=</span><span class="s">&quot;30&quot;</span><span class="w"> </span><span class="na">AspectRatio=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="nt">&lt;ContentView</span><span class="w"> </span><span class="na">x:Name=</span><span class="s">&quot;GameBoard&quot;</span><span class="nt">&gt;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="cm">&lt;!-- square game board goes here --&gt;</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="nt">&lt;/ContentView&gt;</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="nt">&lt;/sqm:AspectView&gt;</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="nt">&lt;/ContentPage&gt;</span>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">&lt;ContentPage</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="na">xmlns=</span><span class="s">&quot;http://schemas.microsoft.com/dotnet/2021/maui&quot;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="na">xmlns:x=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="na">xmlns:sqm=</span><span class="s">&quot;clr-namespace:SQuan.Helpers.Maui;assembly=SQuan.Helpers.Maui&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nt">&lt;sqm:AspectView</span><span class="w"> </span><span class="na">Padding=</span><span class="s">&quot;30&quot;</span><span class="w"> </span><span class="na">AspectRatio=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">        </span><span class="nt">&lt;ContentView</span><span class="w"> </span><span class="na">x:Name=</span><span class="s">&quot;GameBoard&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">            </span><span class="cm">&lt;!-- square game board goes here --&gt;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">        </span><span class="nt">&lt;/ContentView&gt;</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="nt">&lt;/sqm:AspectView&gt;</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="nt">&lt;/ContentPage&gt;</span>
 </span></code></pre></div>
 
 

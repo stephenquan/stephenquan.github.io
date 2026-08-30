@@ -2,42 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://stephenquan.github.io/</loc>
-         <lastmod>2026-08-29</lastmod>
+         <lastmod>2026-08-30</lastmod>
     </url>
     <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/Maui/</loc>
-         <lastmod>2026-08-29</lastmod>
+         <lastmod>2026-08-30</lastmod>
     </url>
     <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/Maui/AspectView/</loc>
-         <lastmod>2026-08-29</lastmod>
+         <lastmod>2026-08-30</lastmod>
     </url>
     <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/Maui.Localization/</loc>
-         <lastmod>2026-08-29</lastmod>
+         <lastmod>2026-08-30</lastmod>
     </url>
     <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/Maui.Localization/LocalizationManager/</loc>
-         <lastmod>2026-08-29</lastmod>
+         <lastmod>2026-08-30</lastmod>
+    </url>
+    <url>
+         <loc>https://stephenquan.github.io/SQuan.Helpers/Maui.Localization/LocalizeExtension/</loc>
+         <lastmod>2026-08-30</lastmod>
+    </url>
+    <url>
+         <loc>https://stephenquan.github.io/SQuan.Helpers/Maui.Localization/LocalizeExtensionMethods/</loc>
+         <lastmod>2026-08-30</lastmod>
     </url>
     <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/Maui.Mvvm/</loc>
-         <lastmod>2026-08-29</lastmod>
+         <lastmod>2026-08-30</lastmod>
     </url>
     <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/SQLite.Spatial/</loc>
-         <lastmod>2026-08-29</lastmod>
+         <lastmod>2026-08-30</lastmod>
     </url>
     <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/SQLite.Spatial/MicrosoftDataSqliteSpatialConnection/</loc>
-         <lastmod>2026-08-29</lastmod>
+         <lastmod>2026-08-30</lastmod>
     </url>
     <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/SQLite.Spatial/SQLiteNetSpatialConnection/</loc>
-         <lastmod>2026-08-29</lastmod>
+         <lastmod>2026-08-30</lastmod>
     </url>
     <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/SQLite.Spatial/ST/</loc>
-         <lastmod>2026-08-29</lastmod>
+         <lastmod>2026-08-30</lastmod>
     </url>
 </urlset>

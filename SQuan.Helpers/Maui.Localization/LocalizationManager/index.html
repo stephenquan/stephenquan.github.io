@@ -14,7 +14,7 @@
         <link rel="prev" href="../">
       
       
-        <link rel="next" href="../../Maui.Mvvm/">
+        <link rel="next" href="../LocalizeExtension/">
       
       
         
@@ -477,6 +477,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -578,6 +582,136 @@
             
   
     LocalizationManager
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../LocalizeExtension/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LocalizeExtension
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LocalizeExtension
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../LocalizeExtensionMethods/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LocalizeExtensionMethods
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LocalizeExtensionMethods
   
 
           </label>
@@ -985,7 +1119,7 @@
   <a href="#c-namespace" class="md-nav__link">
     <span class="md-ellipsis">
       
-        C# namespace
+        C# Namespace
       
     </span>
   </a>
@@ -1088,10 +1222,9 @@
 
 <h1 id="localizationmanager-class">LocalizationManager Class</h1>
 <h2 id="overview">Overview</h2>
-<p>Namespace: <a href="..">SQuan.Helpers.Maui.Localization</a></p>
 <p>LocalizationManager is a singleton service that centralizes localization and culture management for an application. It exposes observable CurrentCulture and CurrentUICulture properties and supports a pluggable LocalizationProvider for translating strings from any localization source. By implementing INotifyPropertyChanged, the manager notifies the application whenever the active culture changes, allowing UI elements and data bindings to update automatically at runtime without requiring an application restart.</p>
 <p>In addition to culture management, LocalizationManager provides an extended GetString() API that offers fine-grained control over localization behavior. Resource strings can be retrieved using a specific UI culture, while numbers, dates, and currency values can be formatted using a different culture or fall back to the system defaults. This flexibility makes it easy to build culture-aware applications that can dynamically switch languages while preserving the appropriate regional formatting conventions.</p>
-<h2 id="c-namespace">C# namespace</h2>
+<h2 id="c-namespace">C# Namespace</h2>
 <div class="language-c# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.Maui.Localization</span><span class="p">;</span>
 </span></code></pre></div>
 <h2 id="properties">Properties</h2>
