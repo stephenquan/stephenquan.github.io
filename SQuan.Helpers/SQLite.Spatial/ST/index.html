@@ -1169,6 +1169,94 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#st_boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ST_Boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#st_buffer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ST_Buffer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#st_centroid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ST_Centroid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#st_contains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ST_Contains
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#st_convexhull" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ST_ConvexHull
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#st_coveredby" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ST_CoveredBy
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#st_covers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ST_Covers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#st_crosses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ST_Crosses
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#st_geomfromtext" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1317,6 +1405,38 @@
 <td>Returns the WKT representation of the geometry.</td>
 </tr>
 <tr>
+<td><a href="#st_boundary">ST_Boundary</a></td>
+<td>Computes the boundary of a geometry.</td>
+</tr>
+<tr>
+<td><a href="#st_buffer">ST_Buffer</a></td>
+<td>Computes a buffer region around a geometry.</td>
+</tr>
+<tr>
+<td><a href="#st_centroid">ST_Centroid</a></td>
+<td>Calculates the geometric center (centroid) of a geometry.</td>
+</tr>
+<tr>
+<td><a href="#st_contains">ST_Contains</a></td>
+<td>Determines whether one geometry contains another.</td>
+</tr>
+<tr>
+<td><a href="#st_convexhull">ST_ConvexHull</a></td>
+<td>Computes the convex hull of a geometry.</td>
+</tr>
+<tr>
+<td><a href="#st_coveredby">ST_CoveredBy</a></td>
+<td>Determines whether one geometry is spatially covered by another.</td>
+</tr>
+<tr>
+<td><a href="#st_covers">ST_Covers</a></td>
+<td>Determines whether one geometry spatially covers another.</td>
+</tr>
+<tr>
+<td><a href="#st_crosses">ST_Crosses</a></td>
+<td>Determines whether two geometries cross each other.</td>
+</tr>
+<tr>
 <td><a href="#st_x">ST_X</a></td>
 <td>Extracts the X-coordinate of the centroid of a geometry.</td>
 </tr>
@@ -1353,8 +1473,8 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">square</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">();</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">square</span><span class="p">.</span><span class="n">ST_Area</span><span class="p">();</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_Area</span><span class="p">();</span>
 </span></code></pre></div>
 </div>
 </div>
@@ -1376,102 +1496,250 @@
 </div>
 </div>
 </div>
-<h2 id="st_geomfromtext">ST_GeomFromText</h2>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">blob</span><span class="w"> </span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="nb">text</span><span class="w"> </span><span class="n">wkt</span><span class="p">)</span>
+<h2 id="st_boundary">ST_Boundary</h2>
+<p>Computes the boundary of a geometry from its EWKB representation. For a polygon, the boundary consists of its exterior and interior rings. For a linestring, the boundary includes its endpoints. Returns a EWKB representing the boundary geometry.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">blob</span><span class="w"> </span><span class="n">ST_Boundary</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
 </span></code></pre></div>
-<p>Constructs a geometry object from the OGC Well-Known text representation.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">SQLite</label><label for="__tabbed_3_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">)</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Boundary</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">)</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">();</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">()</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">boundary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_Boundary</span><span class="p">();</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="st_buffer">ST_Buffer</h2>
+<p>Computes a buffer region around a geometry defined by its EWKB representation. The buffer is a polygon that encloses all points within the specified distance from the original geometry.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">blob</span><span class="w"> </span><span class="n">ST_Buffer</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">,</span><span class="w"> </span><span class="nb">real</span><span class="w"> </span><span class="n">distance</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">SQLite</label><label for="__tabbed_4_2">C#</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Buffer</span><span class="p">(</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">),</span><span class="w"> </span><span class="mi">50</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">point</span><span class="p">.</span><span class="n">ST_Buffer</span><span class="p">(</span><span class="mi">50</span><span class="p">);</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="st_centroid">ST_Centroid</h2>
+<p>Calculates the geometric center (centroid) of a geometry provided in EWKB format. The centroid is the arithmetic mean position of all the points in the shape and may not necessarily lie within the geometry itself (e.g., for concave polygons).</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">blob</span><span class="w"> </span><span class="n">ST_Centroid</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">SQLite</label><label for="__tabbed_5_2">C#</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Centroid</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">centroid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">square</span><span class="p">.</span><span class="n">ST_Centroid</span><span class="p">();</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="st_contains">ST_Contains</h2>
+<p>Determines whether one geometry contains another, based on their EWKB representations. The method returns 1 (true) if the first geometry completely contains the second, and 0 (false) otherwise.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nb">integer</span><span class="w"> </span><span class="n">ST_Contains</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">,</span><span class="w"> </span><span class="nb">blob</span><span class="w"> </span><span class="n">other</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">SQLite</label><label for="__tabbed_6_2">C#</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Contains</span><span class="p">(</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">            </span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">),</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">            </span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">))</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">contains</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_Contains</span><span class="p">(</span><span class="n">point</span><span class="p">);</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="st_convexhull">ST_ConvexHull</h2>
+<p>Computes the convex hull of a geometry provided in EWKB format. The convex hull is the smallest convex polygon that fully encloses all points of the input geometry.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nb">blob</span><span class="w"> </span><span class="n">ST_ConvexHull</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">SQLite</label><label for="__tabbed_7_2">C#</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_ConvexHull</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">()</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">boundary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_ConvexHull</span><span class="p">();</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="st_coveredby">ST_CoveredBy</h2>
+<p>Determines whether one geometry is spatially covered by another, based on their EWKB representations. A geometry is considered "covered by" another if every point of the first geometry lies within or on the boundary of the second geometry. The method returns 1 (true) if the first geometry is covered by the second, and 0 (false) otherwise.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nb">integer</span><span class="w"> </span><span class="n">ST_CoveredBy</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">,</span><span class="w"> </span><span class="nb">blob</span><span class="w"> </span><span class="n">other</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">SQLite</label><label for="__tabbed_8_2">C#</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Contains</span><span class="p">(</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">            </span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">),</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">            </span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">))</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">coveredby</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">point</span><span class="p">.</span><span class="n">ST_CoveredBy</span><span class="p">(</span><span class="n">geometry</span><span class="p">);</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="st_covers">ST_Covers</h2>
+<p>Determines whether one geometry spatially covers another, based on their EWKB representations. A geometry covers another if every point of the second geometry lies within or on the boundary of the first. The method returns 1 (true) if the first geometry covers the second, and 0 (false) otherwise.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="nb">integer</span><span class="w"> </span><span class="n">ST_Covers</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">,</span><span class="w"> </span><span class="nb">blob</span><span class="w"> </span><span class="n">other</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">SQLite</label><label for="__tabbed_9_2">C#</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Covers</span><span class="p">(</span>
+</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="w">            </span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">),</span>
+</span><span id="__span-26-3"><a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="w">            </span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">))</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
+</span><span id="__span-27-2"><a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+</span><span id="__span-27-3"><a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">covers</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_Covers</span><span class="p">(</span><span class="n">point</span><span class="p">);</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="st_crosses">ST_Crosses</h2>
+<p>Determines whether two geometries cross each other, based on their EWKB representations. Two geometries cross if they share some but not all interior points, and the result of their intersection has a lower dimension than the maximum of the input geometries. The method returns 1 (true) if the first geometry crosses the second, and 0 (false) otherwise.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nb">integer</span><span class="w"> </span><span class="n">ST_Crosses</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">,</span><span class="w"> </span><span class="nb">blob</span><span class="w"> </span><span class="n">other</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">SQLite</label><label for="__tabbed_10_2">C#</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Crosses</span><span class="p">(</span>
+</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="w">            </span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">),</span>
+</span><span id="__span-29-3"><a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="w">            </span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 0 30, 40 0, 0 0))&#39;</span><span class="p">))</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
+</span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">other</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 0 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">crosses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_Covers</span><span class="p">(</span><span class="n">other</span><span class="p">);</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="st_geomfromtext">ST_GeomFromText</h2>
+<p>Constructs a geometry object from the OGC Well-Known text representation.</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="nb">blob</span><span class="w"> </span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="nb">text</span><span class="w"> </span><span class="n">wkt</span><span class="p">)</span>
+</span></code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">SQLite</label><label for="__tabbed_11_2">C#</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">)</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="st_point">ST_Point</h2>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">blob</span><span class="w"> </span><span class="n">ST_Point</span><span class="p">(</span><span class="nb">real</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="nb">real</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nb">integer</span><span class="w"> </span><span class="n">srid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4326</span><span class="p">])</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="nb">blob</span><span class="w"> </span><span class="n">ST_Point</span><span class="p">(</span><span class="nb">real</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="nb">real</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="nb">integer</span><span class="w"> </span><span class="n">srid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">4326</span><span class="p">])</span>
 </span></code></pre></div>
 <p>Returns a Point with the given X and Y coordinate values.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">SQLite</label><label for="__tabbed_4_2">C#</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">SQLite</label><label for="__tabbed_12_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="st_x">ST_X</h2>
 <p>Extracts the X-coordinate of the centroid (geometric center) of a geometry provided in EWKB format. The centroid represents the average position of all points in the geometry and is useful for labeling, spatial indexing, and geometric analysis.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">real</span><span class="w"> </span><span class="n">ST_X</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="nb">real</span><span class="w"> </span><span class="n">ST_X</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
 </span></code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">SQLite</label><label for="__tabbed_5_2">C#</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">SQLite</label><label for="__tabbed_13_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_X</span><span class="p">(</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">))</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_X</span><span class="p">(</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">x_40</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">point</span><span class="p">.</span><span class="n">ST_X</span><span class="p">();</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">x_40</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">point</span><span class="p">.</span><span class="n">ST_X</span><span class="p">();</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="st_xmax">ST_XMax</h2>
 <p>Returns the X maximum of a bounding box or a geometry.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nb">real</span><span class="w"> </span><span class="n">ST_XMax</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="nb">real</span><span class="w"> </span><span class="n">ST_XMax</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
 </span></code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">SQLite</label><label for="__tabbed_6_2">C#</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">SQLite</label><label for="__tabbed_14_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_XMax</span><span class="p">(</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="ss">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">))</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_XMax</span><span class="p">(</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="ss">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">square</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">();</span>
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">xmax_50</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">square</span><span class="p">.</span><span class="n">ST_XMax</span><span class="p">();</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">);</span>
+</span><span id="__span-42-2"><a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">xmax_50</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_XMax</span><span class="p">();</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="st_xmin">ST_XMin</h2>
 <p>Returns the X minimum of a bounding box or a geometry.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nb">real</span><span class="w"> </span><span class="n">ST_XMin</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="nb">real</span><span class="w"> </span><span class="n">ST_XMin</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
 </span></code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">SQLite</label><label for="__tabbed_7_2">C#</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="15:2"><input checked="checked" id="__tabbed_15_1" name="__tabbed_15" type="radio" /><input id="__tabbed_15_2" name="__tabbed_15" type="radio" /><div class="tabbed-labels"><label for="__tabbed_15_1">SQLite</label><label for="__tabbed_15_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_XMin</span><span class="p">(</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="ss">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">))</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_XMin</span><span class="p">(</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="ss">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">square</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">();</span>
-</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">xmin_30</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">square</span><span class="p">.</span><span class="n">ST_XMin</span><span class="p">();</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-45-1"><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40));</span>
+</span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">xmin_30</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_XMin</span><span class="p">();</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="st_y">ST_Y</h2>
 <p>Extracts the Y-coordinate of the centroid (geometric center) of a geometry provided in EWKB format. The centroid represents the average position of all points in the geometry and is useful for labeling, spatial indexing, and geometric analysis.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nb">real</span><span class="w"> </span><span class="n">ST_Y</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="nb">real</span><span class="w"> </span><span class="n">ST_Y</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
 </span></code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">SQLite</label><label for="__tabbed_8_2">C#</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="16:2"><input checked="checked" id="__tabbed_16_1" name="__tabbed_16" type="radio" /><input id="__tabbed_16_2" name="__tabbed_16" type="radio" /><div class="tabbed-labels"><label for="__tabbed_16_1">SQLite</label><label for="__tabbed_16_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Y</span><span class="p">(</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">))</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-47-1"><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Y</span><span class="p">(</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
-</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">y_30</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">point</span><span class="p">.</span><span class="n">ST_Y</span><span class="p">();</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
+</span><span id="__span-48-2"><a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">y_30</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">point</span><span class="p">.</span><span class="n">ST_Y</span><span class="p">();</span>
 </span></code></pre></div>
 </div>
 </div>
@@ -1479,32 +1747,32 @@
 <h2 id="st_ymax">ST_YMax</h2>
 <p>Returns the Y maximum of a bounding box or a geometry.</p>
 <p>real ST_YMax(blob ewkb)</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">SQLite</label><label for="__tabbed_9_2">C#</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="17:2"><input checked="checked" id="__tabbed_17_1" name="__tabbed_17" type="radio" /><input id="__tabbed_17_2" name="__tabbed_17" type="radio" /><div class="tabbed-labels"><label for="__tabbed_17_1">SQLite</label><label for="__tabbed_17_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_YMax</span><span class="p">(</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="ss">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">))</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-49-1"><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_YMax</span><span class="p">(</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="ss">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">square</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">();</span>
-</span><span id="__span-26-2"><a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">ymax_60</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">square</span><span class="p">.</span><span class="n">ST_YMax</span><span class="p">();</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">);</span>
+</span><span id="__span-50-2"><a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">ymax_60</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_YMax</span><span class="p">();</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="st_ymin">ST_YMin</h2>
 <p>Returns the Y minimum of a bounding box or a geometry.</p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="nb">real</span><span class="w"> </span><span class="n">ST_YMin</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="nb">real</span><span class="w"> </span><span class="n">ST_YMin</span><span class="p">(</span><span class="nb">blob</span><span class="w"> </span><span class="n">ewkb</span><span class="p">)</span>
 </span></code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">SQLite</label><label for="__tabbed_10_2">C#</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="18:2"><input checked="checked" id="__tabbed_18_1" name="__tabbed_18" type="radio" /><input id="__tabbed_18_2" name="__tabbed_18" type="radio" /><div class="tabbed-labels"><label for="__tabbed_18_1">SQLite</label><label for="__tabbed_18_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_YMin</span><span class="p">(</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="ss">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">))</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_YMin</span><span class="p">(</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="ss">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">square</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">();</span>
-</span><span id="__span-29-2"><a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">ymin_40</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">square</span><span class="p">.</span><span class="n">ST_YMin</span><span class="p">();</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">);</span>
+</span><span id="__span-53-2"><a id="__codelineno-53-2" name="__codelineno-53-2" href="#__codelineno-53-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">ymin_40</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_YMin</span><span class="p">();</span>
 </span></code></pre></div>
 </div>
 </div>
