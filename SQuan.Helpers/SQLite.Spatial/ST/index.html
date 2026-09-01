@@ -2042,7 +2042,7 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">SQLite</label><label for="__tabbed_2_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_AsText</span><span class="p">(</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="mi">30</span><span class="p">))</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_AsText</span><span class="p">(</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -2063,7 +2063,7 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">()</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">boundary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_Boundary</span><span class="p">();</span>
 </span></code></pre></div>
 </div>
@@ -2195,7 +2195,7 @@
 <div class="tabbed-block">
 <div class="language-c# highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
 </span><span id="__span-30-2"><a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">other</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 0 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
-</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">crosses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_Covers</span><span class="p">(</span><span class="n">other</span><span class="p">);</span>
+</span><span id="__span-30-3"><a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">crosses</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_Crosses</span><span class="p">(</span><span class="n">other</span><span class="p">);</span>
 </span></code></pre></div>
 </div>
 </div>
@@ -2254,7 +2254,7 @@
 </div>
 <div class="tabbed-block">
 <div class="language-c# highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
-</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">other</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_POINT</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
+</span><span id="__span-39-2"><a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">other</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">);</span>
 </span><span id="__span-39-3"><a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a><span class="kt">double</span><span class="w"> </span><span class="n">distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_Distance</span><span class="p">(</span><span class="n">other</span><span class="p">);</span>
 </span></code></pre></div>
 </div>
@@ -2775,7 +2775,7 @@
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-126-1"><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40));</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-126-1"><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((30 40, 50 40, 50 60, 30 60, 30 40))&quot;</span><span class="p">);</span>
 </span><span id="__span-126-2"><a id="__codelineno-126-2" name="__codelineno-126-2" href="#__codelineno-126-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">xmin_30</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_XMin</span><span class="p">();</span>
 </span></code></pre></div>
 </div>
