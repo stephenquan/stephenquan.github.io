@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://stephenquan.github.io/SQuan.Helpers/Maui.Localization/">
+        <link rel="canonical" href="https://stephenquan.github.io/SQuan.Helpers/Maui/BaseBindableObjectMarkupExtension/">
       
       
-        <link rel="prev" href="../Maui/RgbaToColorExtension/">
+        <link rel="prev" href="../AspectView/">
       
       
-        <link rel="next" href="LocalizationManager/">
+        <link rel="next" href="../BoolToObjectExtension/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>SQuan.Helpers.Maui.Localization - Stephen Quan</title>
+        <title>BaseBindableObjectMarkupExtension - Stephen Quan</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#squanhelpersmauilocalization" class="md-skip">
+        <a href="#basebindableobjectmarkupextension" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Stephen Quan" class="md-header__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
+    <a href="../../.." title="Stephen Quan" class="md-header__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M176 56v40h160V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8m-48 40V56c0-30.9 25.1-56 56-56h144c30.9 0 56 25.1 56 56v40h28.1c12.7 0 24.9 5.1 33.9 14.1l51.9 51.9c9 9 14.1 21.2 14.1 33.9V272H376v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H184v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H0v-76.1C0 183.2 5.1 171 14.1 162L66 110.1c9-9 21.2-14.1 33.9-14.1zM0 416v-96h136v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h144v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h136v96c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64"/></svg>
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SQuan.Helpers.Maui.Localization
+              BaseBindableObjectMarkupExtension
             
           </span>
         </div>
@@ -230,7 +230,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Stephen Quan" class="md-nav__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
+    <a href="../../.." title="Stephen Quan" class="md-nav__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M176 56v40h160V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8m-48 40V56c0-30.9 25.1-56 56-56h144c30.9 0 56 25.1 56 56v40h28.1c12.7 0 24.9 5.1 33.9 14.1l51.9 51.9c9 9 14.1 21.2 14.1 33.9V272H376v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H184v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H0v-76.1C0 183.2 5.1 171 14.1 162L66 110.1c9-9 21.2-14.1 33.9-14.1zM0 416v-96h136v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h144v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h136v96c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64"/></svg>
@@ -248,7 +248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -303,7 +303,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -344,6 +344,8 @@
                 
   
   
+    
+  
   
   
     
@@ -373,15 +375,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Maui/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -405,7 +407,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -443,7 +445,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Maui/AspectView/" class="md-nav__link ">
+            <a href="../AspectView/" class="md-nav__link ">
               
   
   
@@ -487,6 +489,8 @@
                 
   
   
+    
+  
   
   
     
@@ -500,15 +504,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Maui/BaseBindableObjectMarkupExtension/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -527,7 +531,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -573,7 +577,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Maui/BoolToObjectExtension/" class="md-nav__link ">
+            <a href="../BoolToObjectExtension/" class="md-nav__link ">
               
   
   
@@ -638,7 +642,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Maui/CompareExtension/" class="md-nav__link ">
+            <a href="../CompareExtension/" class="md-nav__link ">
               
   
   
@@ -703,7 +707,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Maui/FuncToConverter/" class="md-nav__link ">
+            <a href="../FuncToConverter/" class="md-nav__link ">
               
   
   
@@ -768,7 +772,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Maui/FuncToMultiConverter/" class="md-nav__link ">
+            <a href="../FuncToMultiConverter/" class="md-nav__link ">
               
   
   
@@ -833,7 +837,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Maui/RgbaToColorConverter/" class="md-nav__link ">
+            <a href="../RgbaToColorConverter/" class="md-nav__link ">
               
   
   
@@ -898,7 +902,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Maui/RgbaToColorExtension/" class="md-nav__link ">
+            <a href="../RgbaToColorExtension/" class="md-nav__link ">
               
   
   
@@ -950,8 +954,6 @@
                 
   
   
-    
-  
   
   
     
@@ -971,15 +973,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../../Maui.Localization/" class="md-nav__link ">
               
   
   
@@ -997,13 +999,13 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1041,7 +1043,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="LocalizationManager/" class="md-nav__link ">
+            <a href="../../Maui.Localization/LocalizationManager/" class="md-nav__link ">
               
   
   
@@ -1106,7 +1108,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="LocalizeExtension/" class="md-nav__link ">
+            <a href="../../Maui.Localization/LocalizeExtension/" class="md-nav__link ">
               
   
   
@@ -1171,7 +1173,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="LocalizeExtensionMethods/" class="md-nav__link ">
+            <a href="../../Maui.Localization/LocalizeExtensionMethods/" class="md-nav__link ">
               
   
   
@@ -1244,7 +1246,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Maui.Mvvm/" class="md-nav__link ">
+            <a href="../../Maui.Mvvm/" class="md-nav__link ">
               
   
   
@@ -1315,7 +1317,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../SQLite.Spatial/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/" class="md-nav__link ">
               
   
   
@@ -1377,7 +1379,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../SQLite.Spatial/MicrosoftDataSqliteSpatialConnection/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/MicrosoftDataSqliteSpatialConnection/" class="md-nav__link ">
               
   
   
@@ -1442,7 +1444,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../SQLite.Spatial/SQLiteNetSpatialConnection/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/SQLiteNetSpatialConnection/" class="md-nav__link ">
               
   
   
@@ -1507,7 +1509,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../SQLite.Spatial/ST/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/ST/" class="md-nav__link ">
               
   
   
@@ -1600,17 +1602,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-nuget-package" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Add NuGet package
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#c-namespace" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1633,10 +1624,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#providebindingvalue" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Getting started
+        ProvideBindingValue
       
     </span>
   </a>
@@ -1644,52 +1635,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-localizationprovider" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Set LocalizationProvider
+        Example
       
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#xaml-localize-markup-extension" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        XAML Localize markup extension
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="XAML Localize markup extension">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#fluent-c-localize-extension-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Fluent C# Localize extension method
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#runtime-culture-switching" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Runtime culture switching
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1710,149 +1662,54 @@
 
 
 
-<h1 id="squanhelpersmauilocalization">SQuan.Helpers.Maui.Localization</h1>
+<h1 id="basebindableobjectmarkupextension">BaseBindableObjectMarkupExtension</h1>
 <h2 id="overview">Overview</h2>
-<p>SQuan.Helpers.Maui.Localization is a lightweight localization framework for .NET MAUI that helps applications become culture-aware and respond dynamically to language changes while the application is running.</p>
-<p>At the heart of the library is the <a href="LocalizationManager/">LocalizationManager</a>, which provides a simple, consistent approach for managing translations and notifying the user interface when the active culture changes. This enables applications to update translated text without requiring a restart, creating a seamless multilingual experience for users.</p>
-<p>The library promotes a straightforward but extensible pattern that .NET MAUI developers can adopt quickly, reducing the complexity typically associated with localization while remaining flexible enough to support more advanced scenarios and custom translation providers.</p>
-<h2 id="add-nuget-package">Add NuGet package</h2>
-<p>Use the NuGet Package Manager in Visual Studio to install the <a href="https://www.nuget.org/packages/SQuan.Helpers.Maui.Localization">SQuan.Helpers.Maui.Localization</a> package:</p>
-<ol>
-<li>Select Project &gt; Manage NuGet Packages</li>
-<li>On the NuGet Package Manager page, next to Package source, select nuget.org</li>
-<li>Go to the Browse tab and search for <a href="https://www.nuget.org/packages/SQuan.Helpers.Maui.Localization">SQuan.Helpers.Maui.Localization</a>. In the list, select <a href="https://www.nuget.org/packages/SQuan.Helpers.Maui.Localization">SQuan.Helpers.Maui.Localization</a>, and then select Install.</li>
-</ol>
+<p><code>BaseBindableObjectMarkupExtension</code> is an abstract base class that simplifies the creation of XAML markup extensions that expose bindable properties.</p>
+<p>The class implements both <code>IMarkupExtension</code> and the required <code>IProvideValue</code> plumbing, allowing you to focus on defining bindable properties and creating the binding logic.</p>
+<p>A typical implementation uses the <code>CommunityToolkit.Maui</code> <code>BindableProperty</code> source generator to declare properties and overrides <code>ProvideBindingValue</code> to return a <code>BindingBase</code> instance, often a <code>MultiBinding</code> with a custom converter.</p>
+<p>Because this class is abstract, derived classes must implement <code>ProvideBindingValue</code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Experimental Feature</p>
+<p>This feature is experimental and has not been fully tested. Its API and behavior may change in future releases, and you may encounter unexpected issues. Use with caution and thoroughly test it in your own application before relying on it in production.</p>
+</div>
 <h2 id="c-namespace">C# Namespace</h2>
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.Maui.Localization</span><span class="p">;</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.Maui</span><span class="p">;</span>
 </span></code></pre></div>
 <h2 id="xaml-namespace">XAML Namespace</h2>
-<div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>xmlns:i18n=&quot;clr-namespace:SQuan.Helpers.Maui.Localization;assembly=SQuan.Helpers.Maui.Localization&quot;
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>xmlns:sqm=&quot;clr-namespace:SQuan.Helpers.Maui;assembly=SQuan.Helpers.Maui&quot;
 </span></code></pre></div>
-<h2 id="getting-started">Getting started</h2>
-<p>For your .NET MAUI project create the neutral resource file in the format <code>&lt;FullTypeName&gt;.resx</code> (e.g. AppStrings.resx).</p>
-<table>
-<thead>
-<tr>
-<th>Resource Name</th>
-<th>Resource Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>TITLE_HOME</td>
-<td>Home</td>
-</tr>
-<tr>
-<td>LABEL_HELLO_WORLD</td>
-<td>Hello, World!</td>
-</tr>
-<tr>
-<td>LABEL_WELCOME</td>
-<td>Welcome to .NET Multi-platform App UI</td>
-</tr>
-<tr>
-<td>BUTTON_CLICK_ME</td>
-<td>Click me</td>
-</tr>
-<tr>
-<td>BUTTON_CLICKED_1_TIME</td>
-<td>Clicked 1 time</td>
-</tr>
-<tr>
-<td>BUTTON_CLICKED_N_TIMES</td>
-<td>Clicked {0} times!</td>
-</tr>
-</tbody>
-</table>
-<p>The for each language, create localized resource files in the format <code>&lt;FullTypeName&gt;&lt;.Locale&gt;.resx</code> (e.g. to add translations for French, German and Chinese, you will need to create AppStrings.fr.resx, AppStrings.de.resx and AppStrings.zh.resx respectively). In Visual Studio, this is a manual process, which means, you will need to supply the translation strings for each locale you wish to support. There are some tools such as ResXManager that can automate this process using 3rd-party APIs some of which may require an API key to access.</p>
-<h2 id="set-localizationprovider">Set LocalizationProvider</h2>
-<p>LocalizationManager will need you to set the LocalizationProvider to perform string lookups. You can do this by using your ResourceManager's GetString function. For example:</p>
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// MauiProgram.cs</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.Maui.Localization</span><span class="p">;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="k">using</span><span class="w"> </span><span class="nn">HelloWorldDemo.Resources.Strings</span><span class="p">;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">HelloWorldDemo</span><span class="p">;</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MauiProgram</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">{</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="n">MauiApp</span><span class="w"> </span><span class="nf">CreateMauiApp</span><span class="p">()</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">        </span><span class="kt">var</span><span class="w"> </span><span class="n">builder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MauiApp</span><span class="p">.</span><span class="n">CreateBuilder</span><span class="p">();</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">        </span><span class="n">builder</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">            </span><span class="p">.</span><span class="n">UseMauiApp</span><span class="o">&lt;</span><span class="n">App</span><span class="o">&gt;</span><span class="p">()</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">            </span><span class="p">.</span><span class="n">UseMauiCommunityToolkit</span><span class="p">()</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">            </span><span class="p">.</span><span class="n">ConfigureFonts</span><span class="p">(</span><span class="n">fonts</span><span class="w"> </span><span class="o">=&gt;</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">                </span><span class="p">{</span>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">                    </span><span class="n">fonts</span><span class="p">.</span><span class="n">AddFont</span><span class="p">(</span><span class="s">&quot;OpenSans-Regular.ttf&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;OpenSansRegular&quot;</span><span class="p">);</span>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">                    </span><span class="n">fonts</span><span class="p">.</span><span class="n">AddFont</span><span class="p">(</span><span class="s">&quot;OpenSans-Semibold.ttf&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;OpenSansSemibold&quot;</span><span class="p">);</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">                </span><span class="p">});</span>
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="hll"><span class="w">        </span><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizationProvider</span>
-</span></span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="hll"><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="n">AppStrings</span><span class="p">.</span><span class="n">ResourceManager</span><span class="p">.</span><span class="n">GetString</span><span class="p">;</span>
-</span></span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>
-</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="cp">#if DEBUG</span>
-</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">        </span><span class="n">builder</span><span class="p">.</span><span class="n">Logging</span><span class="p">.</span><span class="n">AddDebug</span><span class="p">();</span>
-</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="cp">#endif</span>
-</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>
-</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">builder</span><span class="p">.</span><span class="n">Build</span><span class="p">();</span>
-</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="xaml-localize-markup-extension">XAML Localize markup extension</h2>
-<p>The <code>Localize</code> markup extension convenient wires up translatable text to your .NET MAUI application. For example:</p>
-<div class="language-xml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cm">&lt;!-- MainPage.xaml --&gt;</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">&lt;ContentPage</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="na">x:Class=</span><span class="s">&quot;HelloWorldDemo.MainPage&quot;</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="na">xmlns=</span><span class="s">&quot;http://schemas.microsoft.com/dotnet/2021/maui&quot;</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="na">xmlns:x=</span><span class="s">&quot;http://schemas.microsoft.com/winfx/2009/xaml&quot;</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="hll"><span class="w">    </span><span class="na">xmlns:i18n=</span><span class="s">&quot;clr-namespace:SQuan.Helpers.Maui.Localization;assembly=SQuan.Helpers.Maui.Localization&quot;</span>
-</span></span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="hll"><span class="w">    </span><span class="na">Title=</span><span class="s">&quot;{i18n:Localize TITLE_HOME}&quot;</span><span class="nt">&gt;</span>
-</span></span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="nt">&lt;ScrollView&gt;</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="nt">&lt;VerticalStackLayout&gt;</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">           </span><span class="nt">&lt;Image</span><span class="w"> </span><span class="na">Source=</span><span class="s">&quot;dotnet_bot.png&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="hll"><span class="w">           </span><span class="nt">&lt;Label</span><span class="w"> </span><span class="na">Text=</span><span class="s">&quot;{i18n:Localize LABEL_HELLO_WORLD}&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-</span></span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="hll"><span class="w">           </span><span class="nt">&lt;Label</span><span class="w"> </span><span class="na">Text=</span><span class="s">&quot;{i18n:Localize LABEL_WELCOME}&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-</span></span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="hll"><span class="w">           </span><span class="nt">&lt;Button</span><span class="w"> </span><span class="na">x:Name=</span><span class="s">&quot;CounterBtn&quot;</span><span class="w"> </span><span class="na">Text=</span><span class="s">&quot;{i18n:Localize BUTTON_CLICK_ME}&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-</span></span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">        </span><span class="nt">&lt;/VerticalStackLayout&gt;</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="nt">&lt;/ScrollView&gt;</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nt">&lt;/ContentPage&gt;</span>
-</span></code></pre></div>
-<h3 id="fluent-c-localize-extension-method">Fluent C# Localize extension method</h3>
-<p>Use <code>Localize</code> extension method in C# to create culture-aware bindings to your string resources. For example:</p>
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// MainPage.xaml.cs</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.Maui.Localization</span><span class="p">;</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">using</span><span class="w"> </span><span class="nn">HelloWorldDemo.Resources.Strings</span><span class="p">;</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">namespace</span><span class="w"> </span><span class="nn">HelloWorldDemo</span><span class="p">;</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MainPage</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ContentPage</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">{</span>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">MainPage</span><span class="p">()</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">        </span><span class="n">InitializeComponent</span><span class="p">();</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
-</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">OnCounterClicked</span><span class="p">(</span><span class="kt">object?</span><span class="w"> </span><span class="n">sender</span><span class="p">,</span><span class="w"> </span><span class="n">EventArgs</span><span class="w"> </span><span class="n">e</span><span class="p">)</span>
-</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">        </span><span class="n">count</span><span class="o">++</span><span class="p">;</span>
-</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
-</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span>
-</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="hll"><span class="w">            </span><span class="n">CounterBtn</span><span class="p">.</span><span class="n">Localize</span><span class="p">(</span><span class="n">Button</span><span class="p">.</span><span class="n">TextProperty</span><span class="p">,</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">AppStrings</span><span class="p">.</span><span class="n">BUTTON_CLICKED_1_TIME</span><span class="p">);</span>
-</span></span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">        </span><span class="k">else</span>
-</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="hll"><span class="w">            </span><span class="n">CounterBtn</span><span class="p">.</span><span class="n">Localize</span><span class="p">(</span><span class="n">Button</span><span class="p">.</span><span class="n">TextProperty</span><span class="p">,</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">AppStrings</span><span class="p">.</span><span class="n">BUTTON_CLICKED_N_TIMES</span><span class="p">,</span><span class="w"> </span><span class="n">count</span><span class="p">);</span>
-</span></span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>
-</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="w">        </span><span class="n">SemanticScreenReader</span><span class="p">.</span><span class="n">Announce</span><span class="p">(</span><span class="n">CounterBtn</span><span class="p">.</span><span class="n">Text</span><span class="p">);</span>
-</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="runtime-culture-switching">Runtime culture switching</h3>
-<p>Use <code>CultureUICulture</code> from <code>LocalizationManager</code> to change culture at runtime. Because this is an observable property, changing its value will trigger localization updates throughout the application.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>// Switch to French.
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>LocalizationManager.Current.CurrentUICulture = new CultureInfo(&quot;fr-FR&quot;);
+<h2 id="providebindingvalue">ProvideBindingValue</h2>
+<p>Derived classes must override ProvideBindingValue and return a BindingBase instance.</p>
+<p>This method is responsible for:</p>
+<ul>
+<li>Creating any required Binding or MultiBinding objects.</li>
+<li>Configuring binding modes.</li>
+<li>Providing value converters.</li>
+<li>Returning the final binding that will be applied by the markup extension.</li>
+</ul>
+<h2 id="example">Example</h2>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// The following example creates an RgbaToColorExtension that converts RGBA component values into a MAUI Color.</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="na">[RequireService([typeof(IReferenceProvider), typeof(IProvideValueTarget)]</span><span class="p">)]</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">RgbaToColorExtension</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">BaseBindableObjectMarkupExtension</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">{</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="na">[BindableProperty]</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Red</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="na">[BindableProperty]</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Green</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="na">[BindableProperty]</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Blue</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="na">[BindableProperty]</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Alpha</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="n">BindingBase</span><span class="w"> </span><span class="nf">ProvideBindingValue</span><span class="p">(</span><span class="n">IServiceProvider</span><span class="w"> </span><span class="n">serviceProvider</span><span class="p">)</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="o">=&gt;</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">MultiBinding</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">        </span><span class="p">{</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="n">Bindings</span><span class="w"> </span><span class="o">=</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">            </span><span class="p">{</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">                </span><span class="n">BindingBase</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="k">static</span><span class="w"> </span><span class="p">(</span><span class="n">RgbaToColorExtension</span><span class="w"> </span><span class="n">ctx</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">ctx</span><span class="p">.</span><span class="n">Red</span><span class="p">,</span><span class="w"> </span><span class="n">BindingMode</span><span class="p">.</span><span class="n">OneWay</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">),</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">                </span><span class="n">BindingBase</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="k">static</span><span class="w"> </span><span class="p">(</span><span class="n">RgbaToColorExtension</span><span class="w"> </span><span class="n">ctx</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">ctx</span><span class="p">.</span><span class="n">Green</span><span class="p">,</span><span class="w"> </span><span class="n">BindingMode</span><span class="p">.</span><span class="n">OneWay</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">),</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">                </span><span class="n">BindingBase</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="k">static</span><span class="w"> </span><span class="p">(</span><span class="n">RgbaToColorExtension</span><span class="w"> </span><span class="n">ctx</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">ctx</span><span class="p">.</span><span class="n">Blue</span><span class="p">,</span><span class="w"> </span><span class="n">BindingMode</span><span class="p">.</span><span class="n">OneWay</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">),</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">                </span><span class="n">BindingBase</span><span class="p">.</span><span class="n">Create</span><span class="p">(</span><span class="k">static</span><span class="w"> </span><span class="p">(</span><span class="n">RgbaToColorExtension</span><span class="w"> </span><span class="n">ctx</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">ctx</span><span class="p">.</span><span class="n">Alpha</span><span class="p">,</span><span class="w"> </span><span class="n">BindingMode</span><span class="p">.</span><span class="n">OneWay</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p">:</span><span class="w"> </span><span class="k">this</span><span class="p">)</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">            </span><span class="p">},</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">            </span><span class="n">Mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BindingMode</span><span class="p">.</span><span class="n">OneWay</span><span class="p">,</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">            </span><span class="n">Converter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">FuncToMultiConverter</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">Color</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="n">FromRgba</span><span class="p">)</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">        </span><span class="p">};</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="p">}</span>
 </span></code></pre></div>
 
 
@@ -1945,10 +1802,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

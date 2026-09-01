@@ -17,11 +17,31 @@
          <lastmod>2026-09-01</lastmod>
     </url>
     <url>
+         <loc>https://stephenquan.github.io/SQuan.Helpers/Maui/BaseBindableObjectMarkupExtension/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/Maui/BoolToObjectExtension/</loc>
          <lastmod>2026-09-01</lastmod>
     </url>
     <url>
          <loc>https://stephenquan.github.io/SQuan.Helpers/Maui/CompareExtension/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://stephenquan.github.io/SQuan.Helpers/Maui/FuncToConverter/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://stephenquan.github.io/SQuan.Helpers/Maui/FuncToMultiConverter/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://stephenquan.github.io/SQuan.Helpers/Maui/RgbaToColorConverter/</loc>
+         <lastmod>2026-09-01</lastmod>
+    </url>
+    <url>
+         <loc>https://stephenquan.github.io/SQuan.Helpers/Maui/RgbaToColorExtension/</loc>
          <lastmod>2026-09-01</lastmod>
     </url>
     <url>
