@@ -1653,7 +1653,7 @@
 
 <h1 id="functomulticonverter">FuncToMultiConverter</h1>
 <h2 id="overview">Overview</h2>
-<p>The <code>FuncToMultiConverter</code> is a base class that simplifies the creation of IMultiValueConverters. It allows you to supply a <code>Func&lt;T1...Tn,TReturn&gt;</code> to the constructor and it builds a IMultiValueConverter based on the supplied Func. You specify up to 4 input types and 1 output type for your Func.</p>
+<p>The <code>FuncToMultiConverter</code> is a helper that simplifies creating <code>IMultiValueConverter</code> instances by wrapping a supplied <code>Func&lt;T1..Tn, TReturn&gt;</code> (supports 1 to 9 input values).</p>
 <div class="admonition warning">
 <p class="admonition-title">Experimental Feature</p>
 <p>This feature is experimental and has not been fully tested. Its API and behavior may change in future releases, and you may encounter unexpected issues. Use with caution and thoroughly test it in your own application before relying on it in production.</p>
