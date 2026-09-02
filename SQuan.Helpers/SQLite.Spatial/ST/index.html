@@ -2146,7 +2146,7 @@
 
 <h1 id="st-class">ST Class</h1>
 <h2 id="overview">Overview</h2>
-<p>The ST static class provide a common set of spatial operations that can be used consistently in both SQLite and C#. Rather than maintaining separate implementations for application code and database queries, developers can work with a familiar set of spatial concepts across both environments.</p>
+<p>The ST static class provides a common set of spatial operations that can be used consistently in both SQLite and C#. Rather than maintaining separate implementations for application code and database queries, developers can work with a familiar set of spatial concepts across both environments.</p>
 <p>This unified model makes it easier to move spatial logic between application code and the database. Operations such as creating geometries, calculating distances, testing spatial relationships, and performing geometric transformations can be expressed using the same conceptual API, whether they are executed in-memory through C# or within SQLite queries.</p>
 <h2 id="c-namespace">C# Namespace</h2>
 <div class="language-c# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.SQLite.Spatial</span><span class="p">;</span>
@@ -2162,11 +2162,11 @@
 <tbody>
 <tr>
 <td><a href="#st_point">ST_Point</a></td>
-<td>Creates a point geometry</td>
+<td>Creates a point geometry.</td>
 </tr>
 <tr>
 <td><a href="#st_geomfromtext">ST_GeomFromText</a></td>
-<td>Creates a geometry using WKT definition</td>
+<td>Creates a geometry using WKT definition.</td>
 </tr>
 </tbody>
 </table>
@@ -2360,7 +2360,7 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">SQLite</label><label for="__tabbed_1_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Area</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">)</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Area</span><span class="p">(</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">))</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -2433,7 +2433,7 @@
 </div>
 <div class="tabbed-block">
 <div class="language-c# highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">geometry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ST</span><span class="p">.</span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s">&quot;POLYGON((0 0, 40 30, 40 0, 0 0))&quot;</span><span class="p">);</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">centroid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">square</span><span class="p">.</span><span class="n">ST_Centroid</span><span class="p">();</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kt">byte</span><span class="p">[]</span><span class="w"> </span><span class="n">centroid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">geometry</span><span class="p">.</span><span class="n">ST_Centroid</span><span class="p">();</span>
 </span></code></pre></div>
 </div>
 </div>
@@ -2482,7 +2482,7 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">SQLite</label><label for="__tabbed_8_2">C#</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_Contains</span><span class="p">(</span>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ST_CoveredBy</span><span class="p">(</span>
 </span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="w">            </span><span class="n">ST_Point</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">),</span>
 </span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">            </span><span class="n">ST_GeomFromText</span><span class="p">(</span><span class="s1">&#39;POLYGON((0 0, 40 30, 40 0, 0 0))&#39;</span><span class="p">))</span>
 </span></code></pre></div>

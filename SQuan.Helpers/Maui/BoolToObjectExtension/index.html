@@ -1698,7 +1698,7 @@
 <h1 id="booltoobject-markup-extension">BoolToObject Markup Extension</h1>
 <h2 id="overview">Overview</h2>
 <p>The <code>BoolToObject</code> markup extension is a XAML-friendly wrapper around the CommunityToolkit.Maui BoolToObjectConverter. It simplifies converting a bool value into one of two objects, depending on whether the value is true or false.</p>
-<p>Unlike the underlying converter, all properties exposed by the markup extension are bindable. This allows values to be supplied through data bindings and ensures the conversion result automatically updates whenever the source value, TrueValue, or FalseValue changes.</p>
+<p>Unlike the underlying converter, all properties exposed by the markup extension are bindable. This allows values to be supplied through data bindings and ensures the conversion result automatically updates whenever the source value, TrueObject, or FalseObject changes.</p>
 <div class="admonition warning">
 <p class="admonition-title">Experimental Feature</p>
 <p>This feature is experimental and has not been fully tested. Its API and behavior may change in future releases, and you may encounter unexpected issues. Use with caution and thoroughly test it in your own application before relying on it in production.</p>
@@ -1754,7 +1754,7 @@
 </table>
 <h2 id="falseobject-property">FalseObject Property</h2>
 <p>Gets or sets the value that will be returned if the controlling boolean value is false.</p>
-<div class="language-c# highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">object?</span><span class="w"> </span><span class="n">FalseValue</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="kt">object?</span><span class="w"> </span><span class="n">FalseObject</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">set</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
 </span></code></pre></div>
 <h2 id="trueobject-property">TrueObject Property</h2>
 <p>Gets or sets the value that will be returned if the controlling boolean value is true.</p>
