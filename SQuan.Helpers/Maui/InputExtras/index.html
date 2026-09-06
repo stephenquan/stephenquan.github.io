@@ -8,25 +8,31 @@
       
       
       
+        <link rel="canonical" href="https://stephenquan.github.io/SQuan.Helpers/Maui/InputExtras/">
       
+      
+        <link rel="prev" href="../FuncToMultiConverter/">
+      
+      
+        <link rel="next" href="../RgbaToColorConverter/">
       
       
         
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Stephen Quan</title>
+        <title>InputExtras Attached Properties - Stephen Quan</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -45,7 +51,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -83,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#inputextras-attached-properties" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -95,7 +106,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="Stephen Quan" class="md-header__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
+    <a href="../../.." title="Stephen Quan" class="md-header__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M176 56v40h160V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8m-48 40V56c0-30.9 25.1-56 56-56h144c30.9 0 56 25.1 56 56v40h28.1c12.7 0 24.9 5.1 33.9 14.1l51.9 51.9c9 9 14.1 21.2 14.1 33.9V272H376v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H184v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H0v-76.1C0 183.2 5.1 171 14.1 162L66 110.1c9-9 21.2-14.1 33.9-14.1zM0 416v-96h136v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h144v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h136v96c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64"/></svg>
@@ -115,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              InputExtras Attached Properties
             
           </span>
         </div>
@@ -219,7 +230,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Stephen Quan" class="md-nav__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
+    <a href="../../.." title="Stephen Quan" class="md-nav__button md-logo" aria-label="Stephen Quan" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M176 56v40h160V56c0-4.4-3.6-8-8-8H184c-4.4 0-8 3.6-8 8m-48 40V56c0-30.9 25.1-56 56-56h144c30.9 0 56 25.1 56 56v40h28.1c12.7 0 24.9 5.1 33.9 14.1l51.9 51.9c9 9 14.1 21.2 14.1 33.9V272H376v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H184v-16c0-13.3-10.7-24-24-24s-24 10.7-24 24v16H0v-76.1C0 183.2 5.1 171 14.1 162L66 110.1c9-9 21.2-14.1 33.9-14.1zM0 416v-96h136v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h144v16c0 13.3 10.7 24 24 24s24-10.7 24-24v-16h136v96c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64"/></svg>
@@ -237,7 +248,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -261,6 +272,8 @@
       
   
   
+    
+  
   
   
     
@@ -282,15 +295,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/" class="md-nav__link ">
+            <a href="../../" class="md-nav__link ">
               
   
   
@@ -314,7 +327,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -331,6 +344,8 @@
                 
   
   
+    
+  
   
   
     
@@ -362,15 +377,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -394,7 +409,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -432,7 +447,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui/AspectView/" class="md-nav__link ">
+            <a href="../AspectView/" class="md-nav__link ">
               
   
   
@@ -497,7 +512,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui/BaseBindableObjectMarkupExtension/" class="md-nav__link ">
+            <a href="../BaseBindableObjectMarkupExtension/" class="md-nav__link ">
               
   
   
@@ -562,7 +577,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui/BoolToObjectExtension/" class="md-nav__link ">
+            <a href="../BoolToObjectExtension/" class="md-nav__link ">
               
   
   
@@ -627,7 +642,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui/CompareExtension/" class="md-nav__link ">
+            <a href="../CompareExtension/" class="md-nav__link ">
               
   
   
@@ -692,7 +707,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui/FuncToConverter/" class="md-nav__link ">
+            <a href="../FuncToConverter/" class="md-nav__link ">
               
   
   
@@ -757,7 +772,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui/FuncToMultiConverter/" class="md-nav__link ">
+            <a href="../FuncToMultiConverter/" class="md-nav__link ">
               
   
   
@@ -801,6 +816,8 @@
                 
   
   
+    
+  
   
   
     
@@ -814,15 +831,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_8" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui/InputExtras/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -841,7 +858,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -887,7 +904,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui/RgbaToColorConverter/" class="md-nav__link ">
+            <a href="../RgbaToColorConverter/" class="md-nav__link ">
               
   
   
@@ -952,7 +969,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui/RgbaToColorExtension/" class="md-nav__link ">
+            <a href="../RgbaToColorExtension/" class="md-nav__link ">
               
   
   
@@ -1031,7 +1048,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui.Localization/" class="md-nav__link ">
+            <a href="../../Maui.Localization/" class="md-nav__link ">
               
   
   
@@ -1093,7 +1110,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui.Localization/LocalizationManager/" class="md-nav__link ">
+            <a href="../../Maui.Localization/LocalizationManager/" class="md-nav__link ">
               
   
   
@@ -1158,7 +1175,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui.Localization/LocalizeExtension/" class="md-nav__link ">
+            <a href="../../Maui.Localization/LocalizeExtension/" class="md-nav__link ">
               
   
   
@@ -1223,7 +1240,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui.Localization/LocalizeExtensionMethods/" class="md-nav__link ">
+            <a href="../../Maui.Localization/LocalizeExtensionMethods/" class="md-nav__link ">
               
   
   
@@ -1296,7 +1313,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/Maui.Mvvm/" class="md-nav__link ">
+            <a href="../../Maui.Mvvm/" class="md-nav__link ">
               
   
   
@@ -1367,7 +1384,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/SQLite.Spatial/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/" class="md-nav__link ">
               
   
   
@@ -1429,7 +1446,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/SQLite.Spatial/MicrosoftDataSqliteSpatialConnection/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/MicrosoftDataSqliteSpatialConnection/" class="md-nav__link ">
               
   
   
@@ -1494,7 +1511,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/SQLite.Spatial/SQLiteNetSpatialConnection/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/SQLiteNetSpatialConnection/" class="md-nav__link ">
               
   
   
@@ -1559,7 +1576,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="/SQuan.Helpers/SQLite.Spatial/ST/" class="md-nav__link ">
+            <a href="../../SQLite.Spatial/ST/" class="md-nav__link ">
               
   
   
@@ -1631,6 +1648,104 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C# Namespace
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xaml-namespace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XAML Namespace
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attached-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attached Properties
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#borderthickness-attached-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BorderThickness Attached Property
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputmode-attached-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InputMode Attached Property
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inputpattern-attached-property" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        InputPattern Attached Property
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1643,8 +1758,91 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="inputextras-attached-properties">InputExtras Attached Properties</h1>
+<h2 id="overview">Overview</h2>
+<p>The <code>InputExtras</code> is a class containing attached properties for InputViews (i.e. Entry and Editor). It is backed by a platform behavior implementation to deliver additional capabilities.</p>
+<h2 id="c-namespace">C# Namespace</h2>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.Maui</span><span class="p">;</span>
+</span></code></pre></div>
+<h2 id="xaml-namespace">XAML Namespace</h2>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>xmlns:sqm=&quot;clr-namespace:SQuan.Helpers.Maui;assembly=SQuan.Helpers.Maui&quot;
+</span></code></pre></div>
+<h2 id="attached-properties">Attached Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#borderthickness-attached-property">BorderThickness</a></td>
+<td>Gets or sets the InputView's border thickness.</td>
+</tr>
+<tr>
+<td><a href="#inputmode-attached-property">InputMode</a></td>
+<td>Gets or sets the InputView's input filter mode.</td>
+</tr>
+<tr>
+<td><a href="#inputpattern-attached-property">InputPattern</a></td>
+<td>Gets or sets the InputView's input filter regex pattern.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="borderthickness-attached-property">BorderThickness Attached Property</h2>
+<p>The <code>InputExtras.BorderThickness</code> attached property, when set to zero (0), will make the InputViews borderless. When set to non-zero (e.g. 1), will restore the InputViews' border. For thickness &gt; 1 there is inconsistent behavior, for example, on Windows, Mac and iOS, the border may become thicker. On Android, however, all non-zero thickness will appear to have a normal border.</p>
+<h2 id="inputmode-attached-property">InputMode Attached Property</h2>
+<p>The <code>InputExtras.InputMode</code> attached property can be set to
+ - <code>InputMode.None</code> (no filtering applied)
+ - <code>InputMode.Integer</code> (supports entering of integers)
+ - <code>InputMode.Decimal</code> (supports entering of decimals)
+ - <code>InputMode.Pattern</code> (allows a custom-defined pattern)</p>
+<p>The implementation makes use of platform implementation to ensure that the characters are optimally blocked. On Android platform, you may observe additional TextChanged events as a correction is applied to reverse invalid input. On other platforms, the invalid input is filtered earlier.</p>
+<h2 id="inputpattern-attached-property">InputPattern Attached Property</h2>
+<p>The <code>InputExtras.InputPattern</code> attached property is checked only when the <code>InputExtras.InputMode</code> is set to <code>InputMode.Pattern</code>. It allows one to supply a regular expression that describes the valid input. Note you must pattern-match intermediate valid input, not just the final input. So license plate AAA999 validation must be <code>"^([A-Z]{0,2}|[A-Z]{3}[0-9]{0,3})$"</code> not <code>"^[A-Z]{3}[0-9]{3}$</code>.</p>
+<h2 id="example">Example</h2>
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&lt;ContentPage</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="na">xmlns:sqm=</span><span class="s">&quot;clr-namespace:SQuan.Helpers.Maui;assembly=SQuan.Helpers.Maui&quot;</span><span class="nt">&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&lt;VerticalStackLayout&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">        </span><span class="nt">&lt;Entry</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">            </span><span class="na">sqm:InputExtras.BorderThickness=</span><span class="s">&quot;1&quot;</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">            </span><span class="na">sqm:InputExtras.InputMode=</span><span class="s">&quot;Integer&quot;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">            </span><span class="na">Placeholder=</span><span class="s">&quot;Enter an integer.&quot;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">            </span><span class="na">Keyboard=</span><span class="s">&quot;Numeric&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="nt">&lt;Entry</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">            </span><span class="na">sqm:InputExtras.BorderThickness=</span><span class="s">&quot;1&quot;</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="na">sqm:InputExtras.InputMode=</span><span class="s">&quot;Decimal&quot;</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">            </span><span class="na">Placeholder=</span><span class="s">&quot;Enter a decimal.&quot;</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">            </span><span class="na">Keyboard=</span><span class="s">&quot;Numeric&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">        </span><span class="nt">&lt;Entry</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">            </span><span class="na">sqm:InputExtras.BorderThickness=</span><span class="s">&quot;1&quot;</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">            </span><span class="na">sqm:InputExtras.InputMode=</span><span class="s">&quot;Pattern&quot;</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">            </span><span class="na">sqm:InputExtras.InputPattern=</span><span class="s">&quot;^([A-Za-z]{0,2}|[A-Za-z]{3}[0-9]{0,3})$&quot;</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">            </span><span class="na">Placeholder=</span><span class="s">&quot;Enter a license plate (AAA999).&quot;</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">            </span><span class="na">Keyboard=</span><span class="s">&quot;Default&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="nt">&lt;/VerticalStackLayout&gt;</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="nt">&lt;/ContentPage&gt;</span>
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1723,10 +1921,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/", "features": ["content.code.copy", "navigation.indexes"], "search": "/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
