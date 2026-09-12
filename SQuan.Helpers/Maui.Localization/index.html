@@ -1708,36 +1708,36 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#set-localizationprovider" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Set LocalizationProvider
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#xaml-localize-markup-extension" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        XAML Localize markup extension
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="XAML Localize markup extension">
+    <nav class="md-nav" aria-label="Getting started">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#fluent-c-localize-extension-method" class="md-nav__link">
+  <a href="#localizationprovider" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fluent C# Localize extension method
+        LocalizationProvider
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localize-markup-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Localize markup extension
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#localize-extension-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Localize extension method
       
     </span>
   </a>
@@ -1832,8 +1832,8 @@
 </tbody>
 </table>
 <p>The for each language, create localized resource files in the format <code>&lt;FullTypeName&gt;&lt;.Locale&gt;.resx</code> (e.g. to add translations for French, German and Chinese, you will need to create AppStrings.fr.resx, AppStrings.de.resx and AppStrings.zh.resx respectively). In Visual Studio, this is a manual process, which means, you will need to supply the translation strings for each locale you wish to support. There are some tools such as ResXManager that can automate this process using 3rd-party APIs some of which may require an API key to access.</p>
-<h2 id="set-localizationprovider">Set LocalizationProvider</h2>
-<p>LocalizationManager will need you to set the LocalizationProvider to perform string lookups. You can do this by using your ResourceManager's GetString function. For example:</p>
+<h3 id="localizationprovider">LocalizationProvider</h3>
+<p>You will need to set <a href="LocalizationManager/#localizationprovider-property">LocalizationManager.Current.LocalizationProvider</a> so that it can perform string lookups. You can use a ResourceManager's GetString function. For example:</p>
 <div class="language-c# highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// MauiProgram.cs</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.Maui.Localization</span><span class="p">;</span>
@@ -1866,8 +1866,8 @@
 </span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="p">}</span>
 </span></code></pre></div>
-<h2 id="xaml-localize-markup-extension">XAML Localize markup extension</h2>
-<p>The <code>Localize</code> markup extension convenient wires up translatable text to your .NET MAUI application. For example:</p>
+<h3 id="localize-markup-extension">Localize markup extension</h3>
+<p>The <a href="LocalizeExtension/">Localize</a> XAML markup extension provides a convenient way to bind translatable text in XAML. For example:</p>
 <div class="language-xml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cm">&lt;!-- MainPage.xaml --&gt;</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">&lt;ContentPage</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="na">x:Class=</span><span class="s">&quot;HelloWorldDemo.MainPage&quot;</span>
@@ -1885,8 +1885,8 @@
 </span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="nt">&lt;/ScrollView&gt;</span>
 </span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nt">&lt;/ContentPage&gt;</span>
 </span></code></pre></div>
-<h3 id="fluent-c-localize-extension-method">Fluent C# Localize extension method</h3>
-<p>Use <code>Localize</code> extension method in C# to create culture-aware bindings to your string resources. For example:</p>
+<h3 id="localize-extension-method">Localize extension method</h3>
+<p>The <a href="LocalizeExtensionMethods/">Localize</a> C# extension method provides a conveient way to bind translable text in C#. For example:</p>
 <div class="language-c# highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// MainPage.xaml.cs</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">using</span><span class="w"> </span><span class="nn">SQuan.Helpers.Maui.Localization</span><span class="p">;</span>
@@ -1917,9 +1917,9 @@
 </span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="p">}</span>
 </span></code></pre></div>
 <h3 id="runtime-culture-switching">Runtime culture switching</h3>
-<p>Use <code>CultureUICulture</code> from <code>LocalizationManager</code> to change culture at runtime. Because this is an observable property, changing its value will trigger localization updates throughout the application.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>// Switch to French.
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>LocalizationManager.Current.CurrentUICulture = new CultureInfo(&quot;fr-FR&quot;);
+<p>Set <a href="LocalizationManager/#currentuiculture-property">LocalizationManager.Current.CurrentUICulture</a> and <a href="LocalizationManager/#currentculture-property">LocalizationManager.Current.CurrentCulture</a> to change both the translated text and the formatting of numbers, dates, and currency values. Because these properties are observable, updating them automatically refreshes any bound content throughout the application.</p>
+<div class="language-c# highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">CurrentUICulture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">CultureInfo</span><span class="p">(</span><span class="s">&quot;fr-FR&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// French text</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">CurrentCulture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">CultureInfo</span><span class="p">(</span><span class="s">&quot;fr-FR&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// France/Euro formatting for numbers, dates and currency.</span>
 </span></code></pre></div>
 
 
