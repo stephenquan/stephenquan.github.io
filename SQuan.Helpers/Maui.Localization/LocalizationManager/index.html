@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://stephenquan.github.io/SQuan.Helpers/Maui.Localization/LocalizationManager/">
       
       
-        <link rel="prev" href="../Concepts/Understanding%20LocalizeProvider/">
+        <link rel="prev" href="../Concepts/Understanding%20LocalizationProvider/">
       
       
         <link rel="next" href="../LocalizeExtension/">
@@ -1161,14 +1161,14 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../Concepts/Understanding%20LocalizeProvider/" class="md-nav__link ">
+            <a href="../Concepts/Understanding%20LocalizationProvider/" class="md-nav__link ">
               
   
   
   <span class="md-ellipsis">
     
   
-    Understanding LocalizeProvider
+    Understanding LocalizationProvider
   
 
     
@@ -1185,7 +1185,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Understanding LocalizeProvider
+    Understanding LocalizationProvider
   
 
           </label>
@@ -1975,6 +1975,10 @@
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizationProvider</span>
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="n">AppStrings</span><span class="p">.</span><span class="n">ResourceManager</span><span class="p">.</span><span class="n">GetString</span><span class="p">;</span>
 </span></code></pre></div>
+<p>See Also</p>
+<ul>
+<li><a href="../Concepts/Understanding%20LocalizationProvider/">Understanding LocalizationProvider</a></li>
+</ul>
 <h2 id="getstring-method">GetString Method</h2>
 <p><code>LocalizationManager.Current.GetString()</code> retrieves a localized string using the configured <a href="#localizationprovider-property">LocalizationManager.Current.LocalizationProvider</a>. The method supports composite string formatting by accepting format arguments and can optionally use the supplied currentUICulture and currentCulture values when resolving and formatting the result. If no cultures are provided, the application-wide CurrentUICulture and CurrentCulture values are used, allowing localized strings and culture-sensitive formatting to be resolved consistently throughout the application.</p>
 <div class="language-c# highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kt">string?</span><span class="w"> </span><span class="n">GetString</span><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="k">params</span><span class="w"> </span><span class="kt">object</span><span class="p">[]</span><span class="w"> </span><span class="n">args</span><span class="p">);</span>

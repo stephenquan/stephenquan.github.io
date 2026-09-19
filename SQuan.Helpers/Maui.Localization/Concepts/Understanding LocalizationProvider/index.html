@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://stephenquan.github.io/SQuan.Helpers/Maui.Localization/Concepts/Understanding%20LocalizeProvider/">
+        <link rel="canonical" href="https://stephenquan.github.io/SQuan.Helpers/Maui.Localization/Concepts/Understanding%20LocalizationProvider/">
       
       
         <link rel="prev" href="../../">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Understanding LocalizeProvider - Stephen Quan</title>
+        <title>Understanding LocalizationProvider - Stephen Quan</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#understanding-localizeprovider" class="md-skip">
+        <a href="#understanding-localizationprovider" class="md-skip">
           Skip to content
         </a>
       
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Understanding LocalizeProvider
+              Understanding LocalizationProvider
             
           </span>
         </div>
@@ -1172,7 +1172,7 @@
   <span class="md-ellipsis">
     
   
-    Understanding LocalizeProvider
+    Understanding LocalizationProvider
   
 
     
@@ -1189,7 +1189,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Understanding LocalizeProvider
+    Understanding LocalizationProvider
   
 
           </label>
@@ -1786,10 +1786,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#localizeprovider-as-an-abstraction" class="md-nav__link">
+  <a href="#localizationprovider-as-an-abstraction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LocalizeProvider as an Abstraction
+        LocalizationProvider as an Abstraction
       
     </span>
   </a>
@@ -1868,13 +1868,13 @@
 
 
 
-<h1 id="understanding-localizeprovider">Understanding LocalizeProvider</h1>
-<p>Most applications configure localization by assigning a <code>ResourceManager</code> to <code>LocalizationManager.Current.LocalizeProvider</code>:</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizeProvider</span><span class="w"> </span><span class="o">=</span>
+<h1 id="understanding-localizationprovider">Understanding LocalizationProvider</h1>
+<p>Most applications configure localization by assigning a <code>ResourceManager</code> to <a href="../../LocalizationManager/#localizationprovider-property">LocalizationManager.Current.LocalizationProvider</a>:</p>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizationProvider</span><span class="w"> </span><span class="o">=</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">AppStrings</span><span class="p">.</span><span class="n">ResourceManager</span><span class="p">.</span><span class="n">GetString</span><span class="p">;</span>
 </span></code></pre></div>
 <p>For many applications, this is all that is required.</p>
-<p>However, the <code>LocalizeProvider</code> property was intentionally designed as:</p>
+<p>However, the <a href="../../LocalizationManager/#localizationprovider-property">LocalizationProvider</a> property was intentionally designed as:</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">Func</span><span class="o">&lt;</span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="n">CultureInfo</span><span class="o">?</span><span class="p">,</span><span class="w"> </span><span class="kt">string?</span><span class="o">&gt;</span>
 </span></code></pre></div>
 <p>rather than a <code>ResourceManager</code>.</p>
@@ -1888,7 +1888,7 @@
 <li>Connect to third-party localization services.</li>
 <li>Implement custom lookup and fallback behavior.</li>
 </ul>
-<h2 id="localizeprovider-as-an-abstraction">LocalizeProvider as an Abstraction</h2>
+<h2 id="localizationprovider-as-an-abstraction">LocalizationProvider as an Abstraction</h2>
 <p>From the perspective of the localization system, only one thing matters: a function that accepts:</p>
 <div class="language-csharp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">(</span><span class="kt">string</span><span class="w"> </span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">CultureInfo</span><span class="o">?</span><span class="w"> </span><span class="n">culture</span><span class="p">)</span>
 </span></code></pre></div>
@@ -1897,13 +1897,13 @@
 </span></code></pre></div>
 <p>Everything else is an implementation detail.</p>
 <p>Using <code>ResourceManager.GetString()</code> is simply one implementation of that contract:</p>
-<div class="language-csharp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizeProvider</span><span class="w"> </span><span class="o">=</span>
+<div class="language-csharp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizationProvider</span><span class="w"> </span><span class="o">=</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="n">AppStrings</span><span class="p">.</span><span class="n">ResourceManager</span><span class="p">.</span><span class="n">GetString</span><span class="p">;</span>
 </span></code></pre></div>
 <p>Because the API accepts a delegate, applications are free to introduce additional behavior before deciding how a key should be resolved.</p>
 <h2 id="supporting-multiple-resource-managers">Supporting Multiple Resource Managers</h2>
 <p>In larger applications, localized strings are often distributed across multiple assemblies. For example, an application might define its core user interface strings in <code>App.Core</code>, while data-related messages and validations are maintained in <code>App.Data</code>.</p>
-<p>Rather than consolidating all strings into a single resource file, a <code>LocalizeProvider</code> can perform lookups across multiple <code>ResourceManager</code> instances.</p>
+<p>Rather than consolidating all strings into a single resource file, a <a href="../../LocalizationManager/#localizationprovider-property">LocalizationProvider</a> can perform lookups across multiple <code>ResourceManager</code> instances.</p>
 <h2 id="looking-up-prefixed-keys">Looking Up Prefixed Keys</h2>
 <p>The provider can inspect incoming keys and route the lookup to the appropriate localization source.</p>
 <p>For example:</p>
@@ -1938,7 +1938,7 @@
 </span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">        </span><span class="na">[&quot;APPDATA&quot;]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">App</span><span class="p">.</span><span class="n">Data</span><span class="p">.</span><span class="n">DataStrings</span><span class="p">.</span><span class="n">ResourceManager</span><span class="p">.</span><span class="n">GetString</span><span class="p">,</span>
 </span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="p">};</span>
 </span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
-</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizeProvider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">culture</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizationProvider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">culture</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
 </span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="p">{</span>
 </span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">key</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="sc">&#39;_&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">StringComparison</span><span class="p">.</span><span class="n">Ordinal</span><span class="p">)</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">separatorIndex</span>
 </span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">        </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">separatorIndex</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
@@ -1956,7 +1956,7 @@
 </span><span id="__span-9-26"><a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="p">};</span>
 </span></code></pre></div>
 <h2 id="using-a-custom-data-source">Using a Custom Data Source</h2>
-<p><code>LocalizeProvider</code> is not limited to .NET resource files. Because it is simply a delegate, it can retrieve localized strings from any source.</p>
+<p><a href="../../LocalizationManager/#localizationprovider-property">LocalizationProvider</a> is not limited to .NET resource files. Because it is simply a delegate, it can retrieve localized strings from any source.</p>
 <p>One simple approach is to store translations in a <code>Dictionary&lt;string, string?&gt;</code>. The dictionary key can contain both the logical string identifier and an optional culture suffix.</p>
 <p>For example:</p>
 <table>
@@ -1990,7 +1990,7 @@
 </span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="na">[&quot;/form/question1:label:de&quot;]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Wie heißen Sie?&quot;</span>
 </span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="p">};</span>
 </span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
-</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizeProvider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">culture</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="n">LocalizationManager</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">LocalizationProvider</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">key</span><span class="p">,</span><span class="w"> </span><span class="n">culture</span><span class="p">)</span><span class="w"> </span><span class="o">=&gt;</span>
 </span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="p">{</span>
 </span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">key</span><span class="p">.</span><span class="n">StartsWith</span><span class="p">(</span><span class="s">&quot;itext:&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">StringComparison</span><span class="p">.</span><span class="n">OrdinalIgnoreCase</span><span class="p">))</span>
 </span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="w">    </span><span class="p">{</span>
